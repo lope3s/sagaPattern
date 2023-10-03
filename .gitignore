@@ -3,3 +3,4 @@
 *.env
 *dev.sqlite3
 *package-lock.json
+*.nvmrc
