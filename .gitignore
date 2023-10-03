@@ -1,3 +1,5 @@
-*/node_modules
-postgres
-*/.env
+*node_modules
+*postgres
+*.env
+*dev.sqlite3
+*package-lock.json
