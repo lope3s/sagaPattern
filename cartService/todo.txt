@@ -1,0 +1,14 @@
+[] - the cart service should query the product service before creating the cart item.
+[] - the cart service, when receiving the dropCartItem event must attempt to drop the cart item specified.
+[] - if everything goes okay it must emit a dropStock event to the product service.
+[] - if something goes wrong it must emit a cancelOrder event to the order service.
+[] - the cart service when receiving the restoreCartItem must attempt to restore the droped item in the last transaction and emit a cancelOrder event to the order service.
+
+// implement a database connection like the one in rss-aggregator
+
+cart table:
+id
+product_id
+product_amount
+created_at
+deleted_at

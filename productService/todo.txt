@@ -4,12 +4,6 @@ the order service when receiving the cancelOrder event must attempt to change th
 
 the order service when receiving the approveOrder event must attempt to change the order state to APPROVED.
 
-the cart service, when receiving the dropCartItem event must attempt to drop the cart item specified.
-if everything goes okay it must emit a dropStock event to the product service.
-if something goes wrong it must emit a cancelOrder event to the order service.
-
-the cart service when receiving the restoreCartItem must attempt to restore the droped item in the last transaction and emit a cancelOrder event to the order service.
-
 [x] - the product service, when receiving the dropStock event must attempt to drop the stock of the selected product.
 [x] - if everything goes well it must emit an approveOrder event to the order service.
 [x] - if something goes wrong it must emit an restoreCartItem to the cartService.
